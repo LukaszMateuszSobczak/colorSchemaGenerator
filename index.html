@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+
+        <link
+            rel="stylesheet"
+            href="./style.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <form
+                    action=""
+                    id="colorForm">
+                    <input
+                        type="color"
+                        name="color"
+                        id="color" />
+                    <select
+                        name="color-mode"
+                        id="colorMode">
+                        <option value="monochrome">monochrome</option>
+                        <option value="monochrome-dark">monochrome-dark</option>
+                        <option value="monochrome-light">monochrome-light</option>
+                        <option value="analogic">analogic</option>
+                        <option value="complement">complement</option>
+                        <option value="analogic-complement">analogic-complement</option>
+                        <option value="triad">triad</option>
+                        <option value="quad">quad</option>
+                    </select>
+                    <button id="getColorSchema">Get color schema</button>
+                </form>
+            </header>
+
+            <main
+                class="main"
+                id="main"></main>
+
+            <div
+                class="modal"
+                id="modalWindow">
+                <p class="modal-text">Copied<i class="fa-solid fa-check"></i></p>
+            </div>
+        </div>
+        <script src="./app.js"></script>
+    </body>
+</html>
